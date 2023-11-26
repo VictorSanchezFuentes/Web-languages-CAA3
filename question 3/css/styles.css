@@ -175,6 +175,7 @@ h2, p {
     border-color: white;
     color: white;
     font-size: xx-large;
+    opacity: 0.5;
 }
 
 .grid-container div .offer {
@@ -184,4 +185,62 @@ h2, p {
 
 .grid-container div a {
     background-color: inherit;
+}
+
+.our-experiences {
+    background-color: orange;
+}
+
+.grid-experiences {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px 15px;
+    width: 20%;
+    grid-column-gap: 500px;
+}
+
+.grid-experiences div {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.grid-experiences .flex-experiences .experiences-images {
+    height: 175px;
+    width: 300px;
+}
+
+.grid-experiences .flex-experiences .experiences-images img {
+    object-fit: contain;
+    max-width: 100%;  
+    max-height: 100%; 
+    border-radius: 50%;
+}
+
+.our-experiences .grid-experiences .flex-experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+
+}
+
+.footer-groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
 }
