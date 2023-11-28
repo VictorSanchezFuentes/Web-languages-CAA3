@@ -168,10 +168,10 @@ h2, p {
 
 .destiny-image div {
     position: absolute;
-    width: 100%;
+    width: 125%;
     height: 50%; 
     line-height: 0;
-    transform: translate(0%, -120%);
+    transform: translate(-0%, -100%);
 }
 
 .destiny-image+div {
