@@ -108,6 +108,13 @@ main {
     width: 100%;
 }
 
+
+.our-destinies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h2, p {
     text-align: center;
 }
@@ -213,6 +220,7 @@ h2, p {
 
 .our-experiences {
     background-color: var(--our-experiences-color);
+    text-align: center;
 }
 
 .flex-experiences {
