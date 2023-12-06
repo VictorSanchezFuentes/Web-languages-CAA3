@@ -17,9 +17,28 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 1200px;
-    margin: 0;
+    margin: auto;
     padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .noticeable-font {
@@ -29,7 +48,7 @@ body {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: bold  !important;
 }
 
 nav {
@@ -77,9 +96,9 @@ nav ul li  img{
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 98vw;
+    margin: 0;
     height: 460px;
-
 }
 
 
@@ -175,7 +194,7 @@ h2, p {
 
 .destiny-image div {
     position: absolute;
-    width: 125%;
+    width: 100%;
     height: 50%; 
     line-height: 0;
     transform: translate(-0%, -100%);
@@ -193,7 +212,9 @@ h2, p {
     border-style: solid;
     border-color: white;
     color: white;
-    font-size: xx-large;
+    padding: 0 9px;
+    font-size: x-large;
+    font-weight: bold;
     opacity: 0.5;
 }
 
@@ -211,24 +232,27 @@ h2, p {
 
 
 
-
-
+.yellow-background {
+    background-color: var(--our-experiences-color);
+    width: 98vw;
+    margin: 5% 0 10px 0;
+}
 
 
 
 
 
 .our-experiences {
-    background-color: var(--our-experiences-color);
     text-align: center;
     display: grid;
     grid-template-areas: "h2 h2 h2"
     "p p p"
     "first-image second-image third-image";
-    align-items: space-around;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     padding: 30px;
-    margin: 5% 0;
+    width: 1100px;
 }
 
 .h2-experiences {
@@ -237,6 +261,8 @@ h2, p {
 
 .p-experiences {
     grid-area: p;
+    width: 850px;
+    justify-self: center;
 }
 
 
@@ -260,14 +286,13 @@ h2, p {
 }
 
 .our-experiences .group-experiences div {
-    margin: 5% 0;
+    margin: 20px 0;
 }
 
 
 .our-experiences .group-experiences .experiences-images img {
     object-fit: cover;
-    max-width: 200px;
-    min-width: 200px;
+    width: 200px;
     max-height: 200px;
     border-radius: 50%;
 }
@@ -284,17 +309,20 @@ h2, p {
 footer {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
     justify-content: space-between;
-
+    width: inherit;
 }
 
-.footer-groups {
+.footer-groups, .footer-groups address {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 20%;
+}
+
+.footer-groups div{
+    margin: 10px 0;
 }
 
 footer i {
